@@ -1,0 +1,23 @@
+[2023-09-04T18:20:04.137+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date permission to 509
+[2023-09-04T18:20:04.140+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date'
+[2023-09-04T18:20:04.262+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date permission to 509
+[2023-09-04T18:20:04.271+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date'
+[2023-09-04T18:20:04.399+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tutorial.print_date scheduled__2023-09-03T18:14:19.531249+00:00 [queued]>
+[2023-09-04T18:20:04.432+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tutorial.print_date scheduled__2023-09-03T18:14:19.531249+00:00 [queued]>
+[2023-09-04T18:20:04.435+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-09-04T18:20:04.485+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): print_date> on 2023-09-03 18:14:19.531249+00:00
+[2023-09-04T18:20:04.515+0000] {standard_task_runner.py:57} INFO - Started process 499 to run task
+[2023-09-04T18:20:04.532+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'print_date', 'scheduled__2023-09-03T18:14:19.531249+00:00', '--job-id', '33', '--raw', '--subdir', '/home/***/.local/lib/python3.8/site-packages/***/example_dags/tutorial.py', '--cfg-path', '/tmp/tmpj_ddkx9l']
+[2023-09-04T18:20:04.545+0000] {standard_task_runner.py:85} INFO - Job 33: Subtask print_date
+[2023-09-04T18:20:04.721+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date permission to 509
+[2023-09-04T18:20:04.723+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=tutorial/run_id=scheduled__2023-09-03T18:14:19.531249+00:00/task_id=print_date'
+[2023-09-04T18:20:04.733+0000] {task_command.py:415} INFO - Running <TaskInstance: tutorial.print_date scheduled__2023-09-03T18:14:19.531249+00:00 [running]> on host d1a2050adbbc
+[2023-09-04T18:20:05.207+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tutorial' AIRFLOW_CTX_TASK_ID='print_date' AIRFLOW_CTX_EXECUTION_DATE='2023-09-03T18:14:19.531249+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-03T18:14:19.531249+00:00'
+[2023-09-04T18:20:05.246+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-09-04T18:20:05.251+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'date']
+[2023-09-04T18:20:05.296+0000] {subprocess.py:86} INFO - Output:
+[2023-09-04T18:20:05.408+0000] {subprocess.py:93} INFO - Mon Sep  4 18:20:05 UTC 2023
+[2023-09-04T18:20:05.412+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-09-04T18:20:05.505+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=print_date, execution_date=20230903T181419, start_date=20230904T182004, end_date=20230904T182005
+[2023-09-04T18:20:05.622+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-04T18:20:05.695+0000] {taskinstance.py:2784} INFO - 2 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,19 @@
+[2023-09-04T17:24:40.869+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data permission to 509
+[2023-09-04T17:24:40.882+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data'
+[2023-09-04T17:24:41.219+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data permission to 509
+[2023-09-04T17:24:41.224+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data'
+[2023-09-04T17:24:41.511+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_toll_data.unzip_data manual__2023-09-04T17:18:52.678164+00:00 [queued]>
+[2023-09-04T17:24:41.640+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_toll_data.unzip_data manual__2023-09-04T17:18:52.678164+00:00 [queued]>
+[2023-09-04T17:24:41.645+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-09-04T17:24:41.805+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): unzip_data> on 2023-09-04 17:18:52.678164+00:00
+[2023-09-04T17:24:41.888+0000] {standard_task_runner.py:57} INFO - Started process 532 to run task
+[2023-09-04T17:24:41.921+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_toll_data', 'unzip_data', 'manual__2023-09-04T17:18:52.678164+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/finalassignment/staging/ETL_toll_data.py', '--cfg-path', '/tmp/tmp2yeg9vh3']
+[2023-09-04T17:24:41.945+0000] {standard_task_runner.py:85} INFO - Job 15: Subtask unzip_data
+[2023-09-04T17:24:42.778+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data permission to 509
+[2023-09-04T17:24:42.784+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=ETL_toll_data/run_id=manual__2023-09-04T17:18:52.678164+00:00/task_id=unzip_data'
+[2023-09-04T17:24:42.801+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_toll_data.unzip_data manual__2023-09-04T17:18:52.678164+00:00 [running]> on host d1a2050adbbc
+[2023-09-04T17:25:01.166+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 15 for task unzip_data ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 532)
+[2023-09-04T17:25:01.270+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-04T17:25:01.403+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

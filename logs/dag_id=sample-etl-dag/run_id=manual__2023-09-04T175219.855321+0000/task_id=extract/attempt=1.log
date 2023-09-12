@@ -1,0 +1,23 @@
+[2023-09-04T17:52:28.248+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract permission to 509
+[2023-09-04T17:52:28.262+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract'
+[2023-09-04T17:52:28.457+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract permission to 509
+[2023-09-04T17:52:28.458+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract'
+[2023-09-04T17:52:28.606+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sample-etl-dag.extract manual__2023-09-04T17:52:19.855321+00:00 [queued]>
+[2023-09-04T17:52:28.634+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sample-etl-dag.extract manual__2023-09-04T17:52:19.855321+00:00 [queued]>
+[2023-09-04T17:52:28.635+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-09-04T17:52:28.689+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): extract> on 2023-09-04 17:52:19.855321+00:00
+[2023-09-04T17:52:28.710+0000] {standard_task_runner.py:57} INFO - Started process 83 to run task
+[2023-09-04T17:52:28.724+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'sample-etl-dag', 'extract', 'manual__2023-09-04T17:52:19.855321+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmph35tsh7j']
+[2023-09-04T17:52:28.734+0000] {standard_task_runner.py:85} INFO - Job 21: Subtask extract
+[2023-09-04T17:52:28.933+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract permission to 509
+[2023-09-04T17:52:28.937+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=sample-etl-dag/run_id=manual__2023-09-04T17:52:19.855321+00:00/task_id=extract'
+[2023-09-04T17:52:28.944+0000] {task_command.py:415} INFO - Running <TaskInstance: sample-etl-dag.extract manual__2023-09-04T17:52:19.855321+00:00 [running]> on host d1a2050adbbc
+[2023-09-04T17:52:29.396+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ramesh@somemail.com' AIRFLOW_CTX_DAG_OWNER='Ramesh Sannareddy' AIRFLOW_CTX_DAG_ID='sample-etl-dag' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2023-09-04T17:52:19.855321+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-04T17:52:19.855321+00:00'
+[2023-09-04T17:52:29.434+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-09-04T17:52:29.440+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "extract"']
+[2023-09-04T17:52:29.480+0000] {subprocess.py:86} INFO - Output:
+[2023-09-04T17:52:29.536+0000] {subprocess.py:93} INFO - extract
+[2023-09-04T17:52:29.579+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-09-04T17:52:29.688+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=sample-etl-dag, task_id=extract, execution_date=20230904T175219, start_date=20230904T175228, end_date=20230904T175229
+[2023-09-04T17:52:29.799+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-04T17:52:29.935+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check
